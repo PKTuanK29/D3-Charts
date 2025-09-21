@@ -1,5 +1,5 @@
 // Chọn svg và setup kích thước
-const svgEl = d3.select("#chart");
+const svgEl = d3.select("#chart2");
 const svgWidth = +svgEl.attr("width") || 1400;
 const svgHeight = +svgEl.attr("height") || 700;
 svgEl.style("overflow", "visible");
@@ -138,4 +138,5 @@ d3.csv("data_ggsheet.csv").then(data => {
    .style("font-weight", "600")
    .text(d => formatCurrency(d.Sales));
 });
+
 
