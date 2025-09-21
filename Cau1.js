@@ -23,7 +23,7 @@ const chartColors = [
   "#9B59B6"  // Color 8
 ];
 
-d3.csv("../data/data_ggsheet.csv").then(data => {
+d3.csv("data/data_ggsheet.csv").then(data => {
   // Ép kiểu số an toàn
   data.forEach(d => {
     const rawTien = (d["Thành tiền"] ?? "").toString();
@@ -136,3 +136,4 @@ d3.csv("../data/data_ggsheet.csv").then(data => {
    .style("font-weight", "600")
    .text(d => (d.Sales / 1e6).toFixed(0) + " triệu VND");
 });
+
