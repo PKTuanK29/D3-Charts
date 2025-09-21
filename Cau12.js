@@ -90,4 +90,3 @@ d3.csv("data_ggsheet.csv").then(data => {
     })
     .on("mouseout", () => tooltip.transition().duration(300).style("opacity", 0));
 });
-
