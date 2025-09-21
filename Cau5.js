@@ -54,7 +54,7 @@ function findDateValue(row) {
   return "";
 }
 
-d3.csv("../data/data_ggsheet.csv").then(rawData => {
+d3.csv("data_ggsheet.csv").then(rawData => {
   const dailyMap = new Map();
   rawData.forEach(r => {
     const rawDateVal = findDateValue(r);
@@ -165,3 +165,4 @@ ${(d.avgSales/1e6).toFixed(1)} triệu VND<br/>
     .style("font-weight", "700")
     .text(d => d.avgSales > 0 ? (d.avgSales/1e6).toFixed(1) + " tr" : "");
 });
+
