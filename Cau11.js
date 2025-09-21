@@ -11,7 +11,7 @@ const height = svgHeight - margin.top - margin.bottom;
 const g = svgEl.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
 // Đọc file
-d3.csv("../data/data_ggsheet.csv").then(data => {
+d3.csv(("data_ggsheet.csv")).then(data => {
   // Đếm số lượt mua / khách hàng
   const ordersByCustomer = d3.rollup(
     data,
@@ -92,3 +92,4 @@ d3.csv("../data/data_ggsheet.csv").then(data => {
     })
     .on("mouseout", () => tooltip.transition().duration(300).style("opacity", 0));
 });
+
