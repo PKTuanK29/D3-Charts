@@ -71,7 +71,7 @@ function findDateValue(row) {
   return "";
 }
 
-d3.csv("../data/data_ggsheet.csv").then(rawData => {
+d3.csv("data_ggsheet.csv").then(rawData => {
   rawData.forEach(r => {
     for (const k of Object.keys(r)) {
       if (typeof r[k] === "string") r[k] = r[k].trim();
@@ -226,3 +226,4 @@ d3.csv("../data/data_ggsheet.csv").then(rawData => {
       .text(`[${groupObj.groupCode}] ${groupObj.groupName}`);
   });
 });
+
