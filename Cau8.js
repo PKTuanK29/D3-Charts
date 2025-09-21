@@ -19,7 +19,7 @@ function parseMonth(dateStr) {
   return null;
 }
 
-d3.csv("../data/data_ggsheet.csv").then(rawData => {
+d3.csv("data_ggsheet.csv").then(rawData => {
   // 1. Lấy danh sách tháng và nhóm hàng
   const monthGroupMap = new Map();
   const allMonths = new Set();
@@ -130,3 +130,4 @@ d3.csv("../data/data_ggsheet.csv").then(rawData => {
       .style("alignment-baseline", "middle");
   });
 });
+
