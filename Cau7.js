@@ -14,7 +14,7 @@ const chartColors = [
   "#7F8C8D", "#5DADE2", "#E67E22", "#9B59B6"
 ];
 
-d3.csv("../data/data_ggsheet.csv").then(rawData => {
+d3.csv("data_ggsheet.csv").then(rawData => {
   const allOrders = new Set(rawData.map(r => String(r["Mã đơn hàng"]).trim()).filter(x => x !== ""));
   const grandTotalOrders = allOrders.size;
 
@@ -94,3 +94,4 @@ d3.csv("../data/data_ggsheet.csv").then(rawData => {
     .style("font-weight", "600")
     .text(d => d.Probability.toString().replace(".", ",") + "%");
 });
+
