@@ -76,7 +76,7 @@ function findDateValue(row) {
   return "";
 }
 
-d3.csv("../data/data_ggsheet.csv").then(rawData => {
+d3.csv("data_ggsheet.csv").then(rawData => {
   // 1) Build totals per date-hour
   const dateSet = new Set(); // tập các ngày (YYYY-MM-DD)
   const dateHourMap = new Map(); // key = 'YYYY-MM-DD|HH' -> { totalSales, totalQty }
@@ -236,3 +236,4 @@ d3.csv("../data/data_ggsheet.csv").then(rawData => {
     .style("font-weight", "700")
     .text(d => d.avgSales > 0 ? Math.round(d.avgSales).toLocaleString('vi-VN').replace(/\./g, ",") + " VND" : "");
 });
+
