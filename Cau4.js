@@ -55,7 +55,7 @@ function parseDateFlexible(raw) {
   return null;
 }
 
-d3.csv("../data/data_ggsheet.csv").then(rawData => {
+d3.csv("data_ggsheet.csv").then(rawData => {
   // 1) Build map of daily totals: key = YYYY-MM-DD => { dateObj, totalSales, totalQty }
   const dailyMap = new Map();
 
@@ -198,3 +198,4 @@ d3.csv("../data/data_ggsheet.csv").then(rawData => {
   : ""
 )
 });
+
