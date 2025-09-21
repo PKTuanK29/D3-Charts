@@ -3,22 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <title>D3 Charts - PKTuanK29</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .chart-item {
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .chart-item:hover {
+      background-color: #4a90e2;
+      color: #fff;
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+      border-color: #4a90e2;
+    }
+  </style>
 </head>
 <body>
-  <h1>Charts</h1>
-  <ul>
-    <li><a href="Cau1.html">Chart 1</a></li>
-    <li><a href="Cau2.html">Chart 2</a></li>
-    <li><a href="Cau3.html">Chart 3</a></li>
-    <li><a href="Cau4.html">Chart 4</a></li>
-    <li><a href="Cau5.html">Chart 5</a></li>
-    <li><a href="Cau6.html">Chart 6</a></li>
-    <li><a href="Cau7.html">Chart 7</a></li>
-    <li><a href="Cau8.html">Chart 8</a></li>
-    <li><a href="Cau9.html">Chart 9</a></li>
-    <li><a href="Cau10.html">Chart 10</a></li>
-    <li><a href="Cau11.html">Chart 11</a></li>
-    <li><a href="Cau12.html">Chart 12</a></li>
-  </ul>
+  <h1>D3 Charts</h1>
+
+  <div class="chart-grid">
+    <a href="Cau1.html" class="chart-item">Chart 1</a>
+    <a href="Cau2.html" class="chart-item">Chart 2</a>
+    <a href="Cau3.html" class="chart-item">Chart 3</a>
+    <a href="Cau4.html" class="chart-item">Chart 4</a>
+    <a href="Cau5.html" class="chart-item">Chart 5</a>
+    <a href="Cau6.html" class="chart-item">Chart 6</a>
+    <a href="Cau7.html" class="chart-item">Chart 7</a>
+    <a href="Cau8.html" class="chart-item">Chart 8</a>
+    <a href="Cau9.html" class="chart-item">Chart 9</a>
+    <a href="Cau10.html" class="chart-item">Chart 10</a>
+    <a href="Cau11.html" class="chart-item">Chart 11</a>
+    <a href="Cau12.html" class="chart-item">Chart 12</a>
+  </div>
 </body>
 </html>
