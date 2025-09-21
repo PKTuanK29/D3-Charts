@@ -1,24 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <title>D3 Charts - PKTuanK29</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1ABC9C;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      font-size: 2em;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #1ABC9C;
+      font-weight: bold;
+      font-size: 1.1em;
+      display: block;
+      padding: 10px 0;
+    }
+
+    .card a:hover {
+      color: #16A085;
+    }
+  </style>
 </head>
 <body>
-  <h1>D3 Charts</h1>
-  <ul>
-    <li><a href="Cau1.html">Chart 1</a></li>
-    <li><a href="Cau2.html">Chart 2</a></li>
-    <li><a href="Cau3.html">Chart 3</a></li>
-    <li><a href="Cau4.html">Chart 4</a></li>
-    <li><a href="Cau5.html">Chart 5</a></li>
-    <li><a href="Cau6.html">Chart 6</a></li>
-    <li><a href="Cau7.html">Chart 7</a></li>
-    <li><a href="Cau8.html">Chart 8</a></li>
-    <li><a href="Cau9.html">Chart 9</a></li>
-    <li><a href="Cau10.html">Chart 10</a></li>
-    <li><a href="Cau11.html">Chart 11</a></li>
-    <li><a href="Cau12.html">Chart 12</a></li>
-  </ul>
+
+<header>D3 Charts - PKTuanK29</header>
+
+<main>
+  <div class="grid">
+    <div class="card"><a href="Cau1.html">Chart 1</a></div>
+    <div class="card"><a href="Cau2.html">Chart 2</a></div>
+    <div class="card"><a href="Cau3.html">Chart 3</a></div>
+    <div class="card"><a href="Cau4.html">Chart 4</a></div>
+    <div class="card"><a href="Cau5.html">Chart 5</a></div>
+    <div class="card"><a href="Cau6.html">Chart 6</a></div>
+    <div class="card"><a href="Cau7.html">Chart 7</a></div>
+    <div class="card"><a href="Cau8.html">Chart 8</a></div>
+    <div class="card"><a href="Cau9.html">Chart 9</a></div>
+    <div class="card"><a href="Cau10.html">Chart 10</a></div>
+    <div class="card"><a href="Cau11.html">Chart 11</a></div>
+    <div class="card"><a href="Cau12.html">Chart 12</a></div>
+  </div>
+</main>
+
 </body>
 </html>
