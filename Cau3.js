@@ -30,7 +30,7 @@ function formatQuantity(value) {
   return value.toLocaleString("en-US") + " SKUs"; // luôn dùng dấu phẩy
 }
 
-d3.csv("../data/data_ggsheet.csv").then(data => {
+d3.csv("data_ggsheet.csv").then(data => {
   // Ép kiểu dữ liệu số
   data.forEach(d => {
     d["Thành tiền"] = +String(d["Thành tiền"] || "0").replace(/[^0-9\-]/g, "");
@@ -150,3 +150,4 @@ d3.csv("../data/data_ggsheet.csv").then(data => {
     .style("font-weight", "600")
     .text(d => (d.Sales > 0 ? formatCurrency(d.Sales) : ""));
 });
+
