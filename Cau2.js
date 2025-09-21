@@ -31,7 +31,7 @@ function formatCurrency(value) {
   }
 }
 
-d3.csv("../data/data_ggsheet.csv").then(data => {
+d3.csv("data_ggsheet.csv").then(data => {
   // Ép kiểu số an toàn
   data.forEach(d => {
     const rawTien = (d["Thành tiền"] ?? "").toString();
@@ -138,3 +138,4 @@ d3.csv("../data/data_ggsheet.csv").then(data => {
    .style("font-weight", "600")
    .text(d => formatCurrency(d.Sales));
 });
+
